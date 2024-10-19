@@ -3,8 +3,12 @@ import { Link } from "react-router-dom";
 import { FaPlus } from "react-icons/fa";
 import { BsEyeFill } from "react-icons/bs";
 
+import { CartContext } from "../contexts/CartContext";
+
 function Product({ product }) {
-  console.log(product);
+
+const {addToCart} = useContext(CartContext);
+
   // destructure product
   const { id, image, category, title, price } = product;
   return (
@@ -21,7 +25,7 @@ function Product({ product }) {
         </div>
         {/* buttons */}
         <div className="absolute top-6 -right-11 group-hover:right-5 flex flex-col items-center justify-center gap-y-2 opacity-0 group-hover:opacity-100 transition-all duration-300  ">
-          <button>
+          <button onClick={() => addToCart(product, id)}>
             <div className="flex justify-center items-center w-8 h-8 text-white p-2 bg-orange-500 ">
               <FaPlus size={20} />
             </div>
