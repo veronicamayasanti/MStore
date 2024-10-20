@@ -15,7 +15,7 @@ function Sidebar() {
     <div
       className={`${
         sidebarOpen ? "right-0" : "-right-full"
-      } w-full bg-white fixed top-0 h-full shadow-2xl md:w-[30%] xl:w-[25%] transition-all duration-300 z-20 px-4 lg:px-[35px]}`}
+      } w-full bg-white fixed top-0 h-full shadow-2xl md:w-[35%] xl:w-[15%] transition-all duration-300 z-20 px-4 lg:px-[35px]}`}
     >
       <div className="flex items-center justify-between py-4 border-b">
         <div className="uppercase text-sm font-semibold">Shopping Bag (0)</div>
