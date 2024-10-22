@@ -1,11 +1,11 @@
-import React from 'react'
-
 function Footer() {
   return (
-    <div>
-      <h1>Footer</h1>
-    </div>
-  )
+    <footer className="bg-black py-5  ">
+      <div className="container mx-aut">
+        <p className="text-white text-center">Copyright &copy; MStore 2024. All rights reserved.</p>
+      </div>
+    </footer>
+  );
 }
 
-export default Footer
+export default Footer;
